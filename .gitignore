@@ -1,1 +1,38 @@
-.venv
+# >>> Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.log
+
+# >>> Virtualenvs
+.venv/
+env/
+venv/
+
+# >>> Poetry
+# (Poetry usa o .venv/ ou cache em outros diretórios)
+# poetry.lock
+
+# >>> Pytest
+.cache/
+.coverage
+htmlcov/
+.tox/
+
+# >>> VSCode
+.vscode/
+
+# >>> WSL
+.wslconfig
+
+# >>> Docker
+dbdata/              # dados persistidos do postgres
+**/*.sql             # scripts que você não quer versionar
+**/*.csv             # dados de input
+.env                 # variáveis de ambiente (caso use)
+
+# >>> Meltano
+.meltano/
